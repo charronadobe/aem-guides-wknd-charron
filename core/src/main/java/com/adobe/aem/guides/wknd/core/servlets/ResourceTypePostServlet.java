@@ -1,3 +1,6 @@
+// From the AEM Geeks tutorial
+// https://www.youtube.com/watch?v=FJe6Iu-v_ug
+
 package com.adobe.aem.guides.wknd.core.servlets;
 
 import java.io.IOException;

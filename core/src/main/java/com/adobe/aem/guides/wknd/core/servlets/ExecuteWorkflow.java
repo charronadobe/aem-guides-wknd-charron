@@ -46,3 +46,5 @@ public class ExecuteWorkflow extends SlingSafeMethodsServlet {
         resp.getWriter().write(status);
     }
 }
+// You can execute the above servlet with
+// http://localhost:4502/bin/executeworkflow?page=/content/wknd/language-masters/en/magazine
