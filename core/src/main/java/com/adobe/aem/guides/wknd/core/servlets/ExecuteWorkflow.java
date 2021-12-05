@@ -1,3 +1,9 @@
+// From AEM Geeks workflow Tutorial
+// https://youtu.be/dZFRwgnrD80
+// Code sourced from
+// https://github.com/aemgeeks1212/aemgeeks
+// for dev on localhost:4502 env in ~/Documents/Demos/AEM Demos/AEM Local Instances/SDK Sandbox'
+
 package com.adobe.aem.guides.wknd.core.servlets;
 
 import java.io.IOException;

@@ -1,5 +1,6 @@
 // From the AEM Geeks tutorials
 // https://www.youtube.com/watch?v=FJe6Iu-v_ug
+// for dev on localhost:4502 env in ~/Documents/Demos/AEM Demos/AEM Local Instances/SDK Sandbox'
 
 package com.adobe.aem.guides.wknd.core.servlets;
 
