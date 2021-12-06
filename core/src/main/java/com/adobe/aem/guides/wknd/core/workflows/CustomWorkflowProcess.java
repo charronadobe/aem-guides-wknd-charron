@@ -1,4 +1,4 @@
-// From AEM Geeks workflow Tutorial
+// From AEM Workflow #4 | Custom Workflow Process in aem
 // https://youtu.be/1oJytJAvWdM
 // Code sourced from
 // https://github.com/aemgeeks1212/aemgeeks
@@ -22,12 +22,12 @@ import java.util.Iterator;
 import java.util.Set;
 
 @Component(service = WorkflowProcess.class, immediate = true, property = {
-        "process.label" + " = Geeks Workflow Process",
-        Constants.SERVICE_VENDOR + "=AEM Geeks",
-        Constants.SERVICE_DESCRIPTION + " = Custom geeks workflow step."
+        "process.label" + " = Custom Workflow Process",
+        Constants.SERVICE_VENDOR + "=sandbox/workflow-servlet on Sandbox",
+        Constants.SERVICE_DESCRIPTION + " = Custom geeks workflow step"
 })
-public class CustomWorkflowProcess implements WorkflowProcess {
 
+public class CustomWorkflowProcess implements WorkflowProcess {
     private static final Logger log = LoggerFactory.getLogger(CustomWorkflowProcess.class);
 
     @Override
