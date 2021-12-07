@@ -15,7 +15,6 @@
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <workspaceFilter version="1.0">
-    <filter root="/apps/settings/wcm/designs/wknd" mode="merge"/>
     <filter root="/apps/wknd-packages"/>
     <filter root="/apps/wknd-vendor-packages"/>
 </workspaceFilter>
