@@ -3,10 +3,10 @@
     cq:dialogMode="floating"
     jcr:primaryType="cq:EditConfig">
     <cq:formParameters
-        jcr:description="Geeks custom workflow step."
+        jcr:description="Custom workflow step from AEM Geeks tutorial"
         jcr:primaryType="nt:unstructured"
-        jcr:title="Geeks Workflow Step"
-        PROCESS="com.aem.geeks.core.workflows.GeeksWorkflowStep"
+        jcr:title="Custom Workflow Step"
+        PROCESS="com.adobe.aem.guides.wknd.core.workflows.CustomWorkflowStep"
         PROCESS_AUTO_ADVANCE="true"/>
     <cq:listeners
         jcr:primaryType="cq:EditListenersConfig"

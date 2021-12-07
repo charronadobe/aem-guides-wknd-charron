@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-20T15:17:11.670+01:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Custom Designn"
+        sling:resourceType="wcm/core/components/designer">
+        <model jcr:primaryType="nt:unstructured">
+            <flow
+                jcr:lastModified="{Date}2010-09-23T12:41:41.543+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Collaboration Workflow,group:DAM Workflow,group:Forms Workflow,group:Projects,group:WCM Workflow,group:Workflow,group:Custom Workflow Steps]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </flow>
+        </model>
+        <section/>
+\   </jcr:content>
+</jcr:root>
