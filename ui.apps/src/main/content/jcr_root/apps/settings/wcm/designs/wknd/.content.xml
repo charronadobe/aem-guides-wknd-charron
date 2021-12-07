@@ -5,7 +5,7 @@
         cq:lastModified="{Date}2017-07-20T15:17:11.670+01:00"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
-        jcr:title="Custom Designn"
+        jcr:title="Custom Design"
         sling:resourceType="wcm/core/components/designer">
         <model jcr:primaryType="nt:unstructured">
             <flow
@@ -17,6 +17,5 @@
                 <section jcr:primaryType="nt:unstructured"/>
             </flow>
         </model>
-        <section/>
-\   </jcr:content>
+    </jcr:content>
 </jcr:root>
