@@ -1,5 +1,5 @@
-// From AEM Geeks workflow Tutorial
-// https://youtu.be/dZFRwgnrD80
+// From AEM Geeks Sling Servlet Tutorial
+// https://youtu.be/VNXGF6p0zdM
 // Code sourced from
 // https://github.com/aemgeeks1212/aemgeeks
 // for dev on localhost:4502 env in ~/Documents/Demos/AEM Demos/AEM Local Instances/SDK Sandbox'
@@ -35,13 +35,14 @@ public class ExecuteWorkflow extends SlingSafeMethodsServlet {
     @Override
     protected void doGet(final SlingHttpServletRequest req, final SlingHttpServletResponse resp)
             throws ServletException, IOException {
+        String workflowModelPath = "/var/workflow/models/custom-process";
         String status = "Workflow executing";
         final ResourceResolver resourceResolver = req.getResourceResolver();
         String payload = req.getRequestParameter("page").getString();
         try {
             if (StringUtils.isNotBlank(payload)) {
                 WorkflowSession workflowSession = resourceResolver.adaptTo(WorkflowSession.class);
-                WorkflowModel workflowModel = workflowSession.getModel("/var/workflow/models/create-version");
+                WorkflowModel workflowModel = workflowSession.getModel(workflowModelPath);
                 WorkflowData workflowData = workflowSession.newWorkflowData("JCR_PATH", payload);
                 status = workflowSession.startWorkflow(workflowModel, workflowData).getState();
             }

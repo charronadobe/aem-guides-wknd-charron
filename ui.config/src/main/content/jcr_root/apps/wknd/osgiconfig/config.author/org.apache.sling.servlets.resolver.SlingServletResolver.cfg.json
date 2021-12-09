@@ -1,0 +1,36 @@
+{
+  "supportedheaders": [
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers",
+    "authorization"
+  ],
+  "supportedmethods": ["GET", "HEAD", "POST"],
+  "alloworigin": [""],
+  "servletresolver.paths": [
+    "/bin/",
+    "/libs/",
+    "/apps/",
+    "/system/",
+    "/index.servlet",
+    "/login.servlet",
+    "/services/",
+    "/etc/commerce/searchpromote/feed/deleted.servlet",
+    "/graphql/",
+    "/andy/"
+  ],
+  "alloworiginregexp": ["http://localhost:.*"],
+  "supportscredentials": true,
+  "exposedheaders": [""],
+  "maxage:Integer": 1800,
+  "servletresolver.cacheSize:Integer": 1000,
+  "servletresolver.servletRoot:Integer": -1,
+  "servletresolver.mountProviders": false,
+  "allowedpaths": [
+    "/content/graphql/global/endpoint.json",
+    "/content/cq:graphql/wknd/endpoint.json"
+  ]
+}
