@@ -38,12 +38,8 @@ import com.day.cq.wcm.api.components.ComponentContext;
 import com.adobe.aem.guides.wknd.core.models.Byline;
 import com.adobe.cq.wcm.core.components.models.Image;
 
-@Model(
-        adaptables = {SlingHttpServletRequest.class},
-        adapters = {Byline.class},
-        resourceType = {BylineImpl.RESOURCE_TYPE},
-        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
-)
+@Model(adaptables = { SlingHttpServletRequest.class }, adapters = { Byline.class }, resourceType = {
+        BylineImpl.RESOURCE_TYPE }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class BylineImpl implements Byline {
     protected static final String RESOURCE_TYPE = "wknd/components/byline";
 
@@ -82,12 +78,12 @@ public class BylineImpl implements Byline {
 
     @Override
     public List<String> getOccupations() {
-         if (occupations != null) {
-             Collections.sort(occupations);
-             return new ArrayList<String>(occupations);
-         } else {
-             return Collections.emptyList();
-         }
+        if (occupations != null) {
+            Collections.sort(occupations);
+            return new ArrayList<String>(occupations);
+        } else {
+            return Collections.emptyList();
+        }
     }
 
     @Override
@@ -110,7 +106,8 @@ public class BylineImpl implements Byline {
     }
 
     /**
-     * @return the Image Sling Model of this resource, or null if the resource cannot create a valid Image Sling Model. 
+     * @return the Image Sling Model of this resource, or null if the resource
+     *         cannot create a valid Image Sling Model.
      */
     private Image getImage() {
         return image;

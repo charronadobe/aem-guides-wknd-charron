@@ -5,24 +5,22 @@ import javax.inject.Inject;
 
 import com.adobe.aem.guides.wknd.core.models.Hero;
 
-import org.apache.sling.models.annotations.Default;
+import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.Required;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
-@Model(adaptables = Resource.class, adapters = Hero.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Model(adaptables = SlingHttpServletRequest.class, adapters = Hero.class, resourceType = HeroImpl.RESOURCE_TYPE, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class HeroImpl implements Hero {
-    @Inject
-    @Required
-    @Default(values = "Hero Header")
+    protected static final String RESOURCE_TYPE = "wknd/components/hero";
+
+    @ValueMapValue
     String header;
 
-    @Inject
-    @Default(values = "Descriptive tagline")
+    @ValueMapValue
     String tagline;
 
-    @Inject
-    @Default(values = "false")
+    @ValueMapValue
     boolean isMarketing;
 
     @Override

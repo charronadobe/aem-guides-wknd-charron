@@ -33,8 +33,7 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                 fieldLabel="Header"
-                                                name="./header"
-                                                required="{Boolean}true"/>
+                                                name="./header"/>
                                             <tagline
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
