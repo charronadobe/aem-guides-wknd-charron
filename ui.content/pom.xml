@@ -23,7 +23,7 @@
     <parent>
         <groupId>com.adobe.aem.guides</groupId>
         <artifactId>aem-guides-wknd</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -58,7 +58,8 @@
                         </jackrabbit-nodetypes>
                         <jackrabbit-filter>
                             <options>
-                                <validRoots>/conf,/content,/content/experience-fragments,/content/dam,/content/cq:tags</validRoots>
+                            <!-- I added /content/wknd,/content/wknd/language-masters,/content/wknd/language-masters/en -->
+                                <validRoots>/conf,/content,/content/wknd,/content/wknd/language-masters,/content/wknd/language-masters/en,/content/experience-fragments,/content/dam,/content/cq:tags</validRoots>
                             </options>
                         </jackrabbit-filter>
                     </validatorsSettings>

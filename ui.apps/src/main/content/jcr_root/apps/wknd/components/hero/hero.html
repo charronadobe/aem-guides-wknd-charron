@@ -1,4 +1,7 @@
-<div data-sly-use.hero="com.adobe.aem.guides.wknd.core.models.Hero">
-  <h2>${hero.header}</h2>
-  <p>${hero.tagline}</p>
+<div data-sly-use.hero="com.adobe.aem.guides.wknd.core.models.Hero"
+    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+    data-sly-test.hasContent="${hero.header || hero.tagline}">
+  <h2 data-sly-test="${hero.header}">${hero.header}</h2>
+  <p data-sly-test="${hero.tagline}">${hero.tagline}</p>
 </div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
