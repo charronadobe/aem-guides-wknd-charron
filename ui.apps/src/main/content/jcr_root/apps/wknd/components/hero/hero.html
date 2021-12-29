@@ -1,7 +1,15 @@
-<div data-sly-use.hero="com.adobe.aem.guides.wknd.core.models.Hero"
-    data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-    data-sly-test.hasContent="${hero.header || hero.tagline}">
+<div
+  data-sly-use.hero="com.adobe.aem.guides.wknd.core.models.Hero"
+  data-sly-use.image="com.adobe.cq.wcm.core.components.models.Image"
+  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+  data-sly-test.hasContent="${!hero.empty}"
+>
   <h2 data-sly-test="${hero.header}">${hero.header}</h2>
   <p data-sly-test="${hero.tagline}">${hero.tagline}</p>
+  <div
+    class="cmp-byline__image"
+    data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v2/image' }"
+  ></div>
+  <!--  <img src="${properties.fileReference}"/> -->
 </div>
 <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>

@@ -6,4 +6,6 @@ public interface Hero {
     String getTagline();
 
     boolean getIsMarketing();
+
+    boolean isEmpty();
 }

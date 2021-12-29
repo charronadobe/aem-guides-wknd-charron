@@ -2,12 +2,12 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-12-22T16:25:56.373-05:00"
+        cq:lastModified="{Date}2021-12-28T12:22:59.552-05:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd/settings/wcm/templates/content-page-template"
+        jcr:description="For building out a custom component from scratch"
         jcr:primaryType="cq:PageContent"
         jcr:title="Trymeout"
-        jcr:description="For building out a custom component from scratch"
         sling:resourceType="wknd/components/page">
         <root
             jcr:primaryType="nt:unstructured"
@@ -20,14 +20,27 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wknd/components/container"
                 layout="responsiveGrid">
+                <byline
+                    jcr:created="{Date}2021-12-27T14:38:49.974-05:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-27T14:39:10.781-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/byline"
+                    fileReference="/content/dam/wknd/en/adventures/yosemite-backpacking/AdobeStock_231698835.jpg"
+                    name="Stacey Roswells"
+                    occupations="Photographer"/>
                 <hero
                     jcr:created="{Date}2021-12-22T16:03:20.991-05:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-22T16:25:56.368-05:00"
+                    jcr:lastModified="{Date}2021-12-28T12:22:59.548-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wknd/components/hero"
-                    ismarketing="false"/>
+                    fileReference="/content/dam/wknd/en/adventures/yosemite-backpacking/AdobeStock_231698835.jpg"
+                    header="We Need a Hero"
+                    ismarketing="false"
+                    tagline="From some movie"/>
             </container>
         </root>
     </jcr:content>
