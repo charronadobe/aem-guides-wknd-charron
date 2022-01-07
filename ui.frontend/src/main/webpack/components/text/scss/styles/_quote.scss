@@ -17,36 +17,33 @@
 /* WKND Text Quote style */
 
 .cmp-text--quote {
+  background-color: $brand-third;
+  margin: 1em 0em;
 
-      background-color: $brand-third;
-      margin: 1em 0em;
+  .cmp-text {
+    padding: 1em;
+  }
 
-      .cmp-text {
-            padding: 1em;
-      }
+  blockquote {
+    margin: 0;
+    font-size: $font-size-h2;
+    font-family: $font-family-serif;
+    border: none;
+    padding: 14px 14px;
+    margin-bottom: 0.5em;
 
-      blockquote {
-            margin: 0;
-            font-size: $font-size-h2;
-            font-family: $font-family-serif;
-            border: none;
-            padding: 14px 14px;
-            margin-bottom: 0.5em;
+    &:after {
+      border-bottom: 2px solid $brand-primary;
+      content: "";
+      display: block;
+      width: 80px;
+      position: relative;
+      top: 0.25em;
+    }
+  }
 
-            &:after {
-                  border-bottom: 2px solid $brand-primary;
-                  content: '';
-                  display: block;
-                  width: 80px;
-                  position: relative;
-                  top: 0.25em;
-            }
-      }
-
-      u {
-            text-decoration: none;
-            font-family: $font-family-sans-serif;
-
-           
-      }
+  u {
+    text-decoration: none;
+    font-family: $font-family-sans-serif;
+  }
 }

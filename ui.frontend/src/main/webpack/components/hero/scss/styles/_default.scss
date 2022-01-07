@@ -1,0 +1,32 @@
+.cmp-hero {
+  .cmp-hero__container {
+    .cmp-hero__image {
+      position: relative;
+      float: left;
+
+      .cmp-image__image {
+        object-fit: cover;
+      }
+    }
+
+    .cmp-hero__copy {
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      transform: translate(-30%, -30%);
+
+      .cmp-hero__header {
+        font-size: 64px;
+        font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+        margin-top: 0;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      .cmp-hero__tagline {
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+}

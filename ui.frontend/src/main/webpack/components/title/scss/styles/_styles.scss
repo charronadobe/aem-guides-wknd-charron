@@ -16,34 +16,43 @@
 
 /* WKND Title Article template styles */
 
-.cmp-title--underline { 
- 
-   .cmp-title {
+.cmp-title--underline {
+  .cmp-title {
     .cmp-title__text {
-     &:after {
-     display: block;
-        width: 84px;
+      &:after {
+        display: block;
+        width: 100%;
         padding-top: 8px;
-        content: '';
-        border-bottom: 2px solid $brand-primary;
-     }
+        content: "";
+        border-bottom: 1px solid $gray;
+      }
     }
-   }
   }
+}
 
-  .cmp-title--minispacing {
-   .cmp-title__text {
-      margin-top: 0rem;
-      margin-bottom: 3rem;
-   }
+.cmp-title--minispacing {
+  .cmp-title__text {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
   }
+}
 
 .cmp-title--right {
-   .cmp-title {
-      text-align: right;
+  .cmp-title {
+    text-align: right;
 
-      @media (max-width: $screen-medium) {
-             text-align: unset;
-     }
-   }
+    @media (max-width: $screen-medium) {
+      text-align: unset;
+    }
+  }
+}
+
+.cmp-title--center {
+  .cmp-title {
+    text-align: center;
+
+    @media (max-width: $screen-medium) {
+      text-align: unset;
+    }
+  }
 }
