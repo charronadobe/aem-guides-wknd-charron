@@ -13,23 +13,24 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
- 
+
 //== Colors
 //
 //## Gray and brand colors for use across theme.
 
-$black:                  #202020;
-$gray:                   #696969;
-$gray-light:             #EBEBEB;
-$gray-lighter:           #F7F7F7;
-$white:                  #ffffff;
+$black: #202020;
+$gray: #696969;
+$gray-light: #ebebeb;
+$gray-lighter: #f7f7f7;
+$white: #ffffff;
 
-$yellow:                 #FFEA00;
-$blue:                   #0045FF;
-$pink:                   #FF0058;
+$yellow: #ffea00;
+$blue: #0045ff;
+$red: #ff0000;
+$green: #00520094;
+$pink: #ff0058;
 
-
-$brand-primary:           $yellow;
+$brand-primary: $yellow;
 
 //== Layout
 $gutter-padding: 14px;
@@ -46,57 +47,55 @@ $screen-large: 1200px;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:                   $white;
+$body-bg: $white;
 //** Global text color on `<body>`.
-$text-color:                $black;
-$text-color-inverse:        $gray-light;
+$text-color: $black;
+$text-color-inverse: $gray-light;
 
-$brand-secondary:           $black;
+$brand-secondary: $black;
 
-$brand-third:               $gray-light;
+$brand-third: $gray-light;
 
 //** Global textual link color.
-$link-color:                $blue;
+$link-color: $blue;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      $link-color;
+$link-hover-color: $link-color;
 //** Link hover decoration.
 $link-hover-decoration: underline;
 
 $nav-link: $black;
 $nav-link-inverse: $gray-light;
 
-
-
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif:       "Asar",Georgia, "Times New Roman", Times, serif;
-$font-family-base:        $font-family-sans-serif;
+$font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Asar", Georgia, "Times New Roman", Times, serif;
+$font-family-base: $font-family-sans-serif;
 
-$font-size-base:          18px;
-$font-size-large:         24px;
-$font-size-xlarge:        48px;
-$font-size-medium:		  18px;
-$font-size-small:         14px;
-$font-size-xsmall:		  12px;
+$font-size-base: 18px;
+$font-size-large: 24px;
+$font-size-xlarge: 48px;
+$font-size-medium: 18px;
+$font-size-small: 14px;
+$font-size-xsmall: 12px;
 
-$font-size-h1:            40px;
-$font-size-h2:            36px; 
-$font-size-h3:            24px; 
-$font-size-h4:            16px; 
-$font-size-h5:            14px;
-$font-size-h6:            10px; 
+$font-size-h1: 40px;
+$font-size-h2: 36px;
+$font-size-h3: 24px;
+$font-size-h4: 16px;
+$font-size-h5: 14px;
+$font-size-h6: 10px;
 
 //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.5;
-$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
+$line-height-base: 1.5;
+$line-height-computed: floor(($font-size-base * $line-height-base)); // ~20px
 
-$font-weight-light:      300;
-$font-weight-normal:     normal;
-$font-weight-semi-bold:  400;
-$font-weight-bold:       600;
+$font-weight-light: 300;
+$font-weight-normal: normal;
+$font-weight-semi-bold: 400;
+$font-weight-bold: 600;
 
 //=== Page Layout
 $header-height: 200px;
@@ -105,8 +104,8 @@ $utility-nav-height: 25px;
 
 //=== Language Switcher
 //** Load country flags from this directory.
-$country-flag-path:          '../resources/images/country-flags';
-$country-flag-size:          25px;
+$country-flag-path: "../resources/images/country-flags";
+$country-flag-size: 25px;
 
 //=== WKND Item Styles (Up Next, CF elements)
 $list-item-height: 120px;
