@@ -56,3 +56,11 @@
     color: $text-color-inverse;
   }
 }
+
+// button brand accent
+.cmp-button--brandaccent {
+  .cmp-button {
+    background-color: $brand-accent;
+    color: $text-color-inverse;
+  }
+}

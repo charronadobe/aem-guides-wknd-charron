@@ -1,0 +1,38 @@
+<div
+  data-sly-use.ticker="com.adobe.aem.guides.wknd.core.models.Ticker"
+  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+  data-sly-test.hasContent="${!ticker.empty}"
+  class="cmp-ticker"
+>
+  <div class="cmp-ticker__container">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_12035"></div>
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com/symbols/TSX-CP/" rel="noopener" target="_blank"
+          ><span class="blue-text">${ticker.symbol} Chart</span></a
+        >
+        by TradingView
+      </div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+        new TradingView.widget({
+          autosize: true,
+          symbol:
+            "${ticker.index @context = 'scriptString'}:${ticker.symbol @context = 'scriptString'}",
+          interval: "${ticker.interval @context = 'scriptString'}",
+          timezone: "Etc/UTC",
+          theme: "light",
+          style: "1",
+          locale: "en",
+          toolbar_bg: "#f1f3f6",
+          enable_publishing: false,
+          allow_symbol_change: true,
+          container_id: "tradingview_12035",
+        });
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
