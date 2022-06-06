@@ -242,6 +242,22 @@
                                     <artifactId>core.wcm.components.core</artifactId>
                                     <target>/apps/wknd-vendor-packages/application/install</target>
                                 </embedded>
+                                <embedded>
+                                    <groupId>com.adobe.acs</groupId>
+                                    <artifactId>acs-aem-commons-content</artifactId>
+                                    <type>zip</type>
+                                    <target>/apps/my-app-packages/container/install</target>
+                                    <filter>true</filter>
+                                    <isAllVersionsFilter>true</isAllVersionsFilter>
+                                </embedded>
+                                <embedded>
+                                    <groupId>com.adobe.acs</groupId>
+                                    <artifactId>acs-aem-commons-content</artifactId>
+                                    <type>zip</type>
+                                    <target>/apps/my-app-packages/container/install</target>
+                                    <filter>true</filter>
+                                    <isAllVersionsFilter>true</isAllVersionsFilter>
+                                </embedded>
                             </embeddeds>
                         </configuration>
                     </plugin>
@@ -292,6 +308,12 @@
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.core</artifactId>                
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-content</artifactId>
+            <version>5.3.0</version>
+            <type>zip</type>
         </dependency>
     </dependencies>
 </project>
