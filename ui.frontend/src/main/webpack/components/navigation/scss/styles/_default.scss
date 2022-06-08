@@ -14,7 +14,7 @@
 }
 
 .cmp-navigation__item-link {
-  color: $text-color;
+  color: $text-color-inverse;
   font-size: $font-size-small;
   text-transform: uppercase;
   padding: 15px 17px;
@@ -22,11 +22,12 @@
 
   &:hover,
   &:focus {
+    color: $navy;
     background-color: $brand-third;
   }
-}
 
-/* hide root nav */
-.cmp-navigation__item--level-0 > .cmp-navigation__item-link {
-  display: none;
+  /* hide root nav */
+  .cmp-navigation__item--level-0 > .cmp-navigation__item-link {
+    display: none;
+  }
 }
