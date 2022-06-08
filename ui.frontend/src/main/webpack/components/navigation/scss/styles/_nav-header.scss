@@ -16,27 +16,29 @@
 /* WKND Navigation Header styles */
 
 .cmp-navigation--header {
-    min-width: 100px;
-    
-    @media (min-width: ($screen-medium + 1)) and (max-width: $screen-large) {
-        width: 60% !important;
-    }
+  min-width: 100px;
 
+  @media (min-width: ($screen-medium + 1)) and (max-width: $screen-large) {
+    width: 60% !important;
+  }
+
+  .cmp-navigation {
+    float: right;
+  }
+
+  /* only highlight level 1 */
+  .cmp-navigation__item--level-1.cmp-navigation__item--active .cmp-navigation__item-link {
+    background-color: $brand-primary;
+  }
+
+  /* Tablet width */
+  @media (max-width: $screen-medium) {
     .cmp-navigation {
-        float: right;
+      display: none !important;
     }
-    
-    /* only highlight level 1 */
-    .cmp-navigation__item--level-1.cmp-navigation__item--active .cmp-navigation__item-link {
-        background-color: $brand-primary;
-    }
+  }
 
-    /* Tablet width */
-    @media (max-width: $screen-medium) {
-
-        .cmp-navigation {
-            display: none !important;
-        }
-        
-    }
+  .cmp-navigation__item-link-reverse {
+    color: $text-color-inverse;
+  }
 }
