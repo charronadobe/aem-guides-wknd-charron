@@ -59,6 +59,12 @@
                         </repositoryStructurePackage>
                     </repositoryStructurePackages>
                     <dependencies>
+                        <!-- For ACS Commons Marketo Forms fix -->
+                        <dependency>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-ui.apps</artifactId>
+                            <version>5.3.0</version>
+                        </dependency>
                     </dependencies>
                 </configuration>
             </plugin>
@@ -139,6 +145,19 @@
             <artifactId>org.apache.sling.scripting.sightly.runtime</artifactId>
             <version>1.2.0-1.4.0</version>
             <scope>provided</scope>
+        </dependency>
+        <!-- For ACS Commons Marketo Forms fix -->
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-bundle</artifactId>
+            <version>5.3.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-ui.apps</artifactId>
+            <version>5.3.0</version>
+            <type>zip</type>
         </dependency>
     </dependencies>
 </project>
