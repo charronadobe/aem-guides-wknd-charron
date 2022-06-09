@@ -39,7 +39,7 @@
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
                                                 checked="{Boolean}false"
                                                 name="./ismarketing"
-                                                text="Hero text is marketing content"
+                                                text="Text is marketing content"
                                                 uncheckedValue="{Boolean}false"
                                                 value="{Boolean}true"/>
                                         </items>
