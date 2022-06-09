@@ -1,29 +1,41 @@
 /* Light */
 .cmp-title--white {
-    .cmp-title__text {
-        color: $text-color-inverse;
-    }
+  .cmp-title__text {
+    color: $text-color-inverse;
+  }
 }
 
 /* Gray */
 .cmp-title--gray {
-    .cmp-title__text {
-        color: $gray;
-    }
+  .cmp-title__text {
+    color: $gray;
+  }
 }
 
 /* Black */
 .cmp-title--black {
-    .cmp-title__text {
-        color: $black;
-    }
+  .cmp-title__text {
+    color: $black;
+  }
+}
+
+/* Navy */
+.cmp-title--navy {
+  .cmp-title__text {
+    color: $navy;
+  }
+}
+
+/* Crimson */
+.cmp-title--crimson {
+  .cmp-title__text {
+    color: $crimson;
+  }
 }
 
 /* Bold */
 .cmp-title--bold {
-    .cmp-title__text {
-        font-weight: 600;
-    }
+  .cmp-title__text {
+    font-weight: 600;
+  }
 }
-
-
