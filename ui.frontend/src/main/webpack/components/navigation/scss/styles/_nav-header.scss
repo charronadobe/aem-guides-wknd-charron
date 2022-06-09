@@ -28,7 +28,9 @@
 
   /* only highlight level 1 */
   .cmp-navigation__item--level-1.cmp-navigation__item--active .cmp-navigation__item-link {
-    background-color: $brand-primary;
+    color: $navy;
+    background-color: $brand-third;
+    /*background-color: $brand-primary;*/
   }
 
   /* Tablet width */
