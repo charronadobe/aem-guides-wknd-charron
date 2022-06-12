@@ -56,6 +56,12 @@
                     <skipSubPackageValidation>true</skipSubPackageValidation>
                     <embeddeds>
                         <embedded>
+                            <groupId>digital.hoodoo</groupId>
+                            <artifactId>workfront-tools.ui.apps</artifactId>
+                            <type>zip</type>
+                            <target>/apps/wknd-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
                             <artifactId>aem-guides-wknd.ui.apps</artifactId>
                             <type>zip</type>
@@ -270,6 +276,14 @@
     <!-- D E P E N D E N C I E S                                                -->
     <!-- ====================================================================== -->
     <dependencies>
+<!-- Workfront Tools -->
+        <dependency>
+            <groupId>digital.hoodoo</groupId>
+            <artifactId>workfront-tools.ui.apps</artifactId>
+            <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
+        </dependency>
         <dependency>
             <groupId>com.adobe.aem.guides</groupId>
             <artifactId>aem-guides-wknd.ui.apps</artifactId>

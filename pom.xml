@@ -716,7 +716,15 @@ Bundle-DocURL:
                 <version>${aem.sdk.api}</version>
                 <scope>provided</scope>
             </dependency>
-
+            <!-- Workfront Tools -->
+            <dependency>
+                <groupId>digital.hoodoo</groupId>
+                <artifactId>workfront-tools.ui.apps</artifactId>
+                <type>zip</type>
+                <version>1.8.0</version>
+                <scope>system</scope>
+                <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
+            </dependency>
              <!-- AEM Core Components -->
             <dependency>
                 <groupId>com.adobe.cq</groupId>
