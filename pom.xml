@@ -716,7 +716,7 @@ Bundle-DocURL:
                 <version>${aem.sdk.api}</version>
                 <scope>provided</scope>
             </dependency>
-            <!-- Workfront Tools -->
+            <!-- Workfront Enhanced Connector -->
             <dependency>
                 <groupId>digital.hoodoo</groupId>
                 <artifactId>workfront-tools.ui.apps</artifactId>

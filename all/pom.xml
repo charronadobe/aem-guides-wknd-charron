@@ -55,11 +55,21 @@
                     <!-- skip sub package validation for now as some vendor packages like CIF apps will not pass -->
                     <skipSubPackageValidation>true</skipSubPackageValidation>
                     <embeddeds>
+                        <!-- Workfront Enhanced Connector -->
                         <embedded>
                             <groupId>digital.hoodoo</groupId>
                             <artifactId>workfront-tools.ui.apps</artifactId>
                             <type>zip</type>
                             <target>/apps/wknd-vendor-packages/application/install</target>
+                        </embedded>
+                        <!-- ACS Commons -->
+                        <embedded>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-content</artifactId>
+                            <type>zip</type>
+                            <target>/apps/wknd-packages/container/install</target>
+                            <filter>true</filter>
+                            <isAllVersionsFilter>true</isAllVersionsFilter>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
@@ -90,14 +100,6 @@
                             <type>zip</type>
                             <target>/apps/wknd-packages/content/install</target>
                         </embedded>
-                            <embedded>
-                                <groupId>com.adobe.acs</groupId>
-                                <artifactId>acs-aem-commons-content</artifactId>
-                                <type>zip</type>
-                                <target>/apps/wknd-packages/container/install</target>
-                                <filter>true</filter>
-                                <isAllVersionsFilter>true</isAllVersionsFilter>
-                            </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -276,13 +278,20 @@
     <!-- D E P E N D E N C I E S                                                -->
     <!-- ====================================================================== -->
     <dependencies>
-<!-- Workfront Tools -->
+        <!-- Workfront Enhanced Connector -->
         <dependency>
             <groupId>digital.hoodoo</groupId>
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
             <scope>system</scope>
             <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
+        </dependency>
+        <!-- ACS Commons -->
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-content</artifactId>
+            <version>5.3.0</version>
+            <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.aem.guides</groupId>
@@ -322,12 +331,6 @@
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.core</artifactId>                
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.acs</groupId>
-            <artifactId>acs-aem-commons-content</artifactId>
-            <version>5.3.0</version>
-            <type>zip</type>
         </dependency>
     </dependencies>
 </project>
