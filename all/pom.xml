@@ -71,6 +71,13 @@
                             <filter>true</filter>
                             <isAllVersionsFilter>true</isAllVersionsFilter>
                         </embedded>
+                        <!-- MySQL JDBC Connector -->
+                        <embedded>
+                            <groupId>mysql</groupId>
+                            <artifactId>mysql-connector-java</artifactId>
+                            <type>jar</type>
+                            <target>/apps/wknd-vendor-packages/application/install</target>
+                        </embedded>
                         <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
                             <artifactId>aem-guides-wknd.ui.apps</artifactId>
@@ -292,6 +299,12 @@
             <artifactId>acs-aem-commons-content</artifactId>
             <version>5.3.0</version>
             <type>zip</type>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.29</version>
         </dependency>
         <dependency>
             <groupId>com.adobe.aem.guides</groupId>
