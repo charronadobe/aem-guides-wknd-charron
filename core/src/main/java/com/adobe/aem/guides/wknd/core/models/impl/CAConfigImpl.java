@@ -16,7 +16,7 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 
-import com.adobe.aem.guides.wknd.core.config.CAConfig;
+import com.adobe.aem.guides.wknd.core.models.CAConfig;
 import com.day.cq.wcm.api.Page;
 
 @Model(adaptables = SlingHttpServletRequest.class, adapters = CAConfig.class, resourceType = CAConfigImpl.RESOURCE_TYPE, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
