@@ -716,6 +716,13 @@ Bundle-DocURL:
                 <version>${aem.sdk.api}</version>
                 <scope>provided</scope>
             </dependency>
+            <!-- MySQL driver -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.29</version>
+                <scope>provided</scope>
+            </dependency>
             <!-- Workfront Enhanced Connector -->
             <dependency>
                 <groupId>digital.hoodoo</groupId>
