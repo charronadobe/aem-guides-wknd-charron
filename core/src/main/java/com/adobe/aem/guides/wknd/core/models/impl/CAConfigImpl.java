@@ -16,6 +16,7 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 
+import com.adobe.aem.guides.wknd.core.config.CardCAConfig;
 import com.adobe.aem.guides.wknd.core.models.CAConfig;
 import com.day.cq.wcm.api.Page;
 
@@ -36,37 +37,38 @@ public class CAConfigImpl implements CAConfig {
     private String siteCountry;
     private String siteLocale;
     private String siteSection;
+    private String siteAdmin;
 
     @Override
-    public Class<? extends Annotation> annotationType() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public String siteCountry() {
+    public String getSiteCountry() {
         return siteCountry;
     }
 
     @Override
-    public String siteLocale() {
+    public String getSiteLocale() {
         return siteLocale;
     }
 
     @Override
-    public String siteSection() {
+    public String getSiteSection() {
         return siteSection;
+    }
+
+    @Override
+    public String getSiteAdmin() {
+        return siteAdmin;
     }
 
     @PostConstruct
     public void PostConstruct() {
-        CAConfig caConfig = getContextAwareConfig(currentPage.getPath(), resourceResolver);
-        siteCountry = caConfig.siteCountry();
-        siteLocale = caConfig.siteLocale();
-        siteSection = caConfig.siteSection();
+        CardCAConfig cardCaConfig = getContextAwareConfig(currentPage.getPath(), resourceResolver);
+        siteCountry = cardCaConfig.siteCountry();
+        siteLocale = cardCaConfig.siteLocale();
+        siteSection = cardCaConfig.siteSection();
+        siteAdmin = cardCaConfig.siteAdmin();
     }
 
-    public CAConfig getContextAwareConfig(String currentPage, ResourceResolver resourceResolver) {
+    public CardCAConfig getContextAwareConfig(String currentPage, ResourceResolver resourceResolver) {
         String currentPath = StringUtils.isNotBlank(currentPage) ? currentPage : StringUtils.EMPTY;
         Resource contentResource = resourceResolver.getResource(currentPath);
 
@@ -74,7 +76,7 @@ public class CAConfigImpl implements CAConfig {
             ConfigurationBuilder configurationBuilder = contentResource.adaptTo(ConfigurationBuilder.class);
 
             if (configurationBuilder != null) {
-                return configurationBuilder.as(CAConfig.class);
+                return configurationBuilder.as(CardCAConfig.class);
             }
         }
         return null;

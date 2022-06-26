@@ -1,17 +1,11 @@
 package com.adobe.aem.guides.wknd.core.models;
 
-import org.apache.sling.caconfig.annotation.Configuration;
-import org.apache.sling.caconfig.annotation.Property;
+public interface CAConfig {
+    public String getSiteCountry();
 
-@Configuration(label = "CAConfig", description = "Context Aware Config for demo")
+    public String getSiteLocale();
 
-public @interface CAConfig {
-    @Property(label = "Country Site", description = "Country")
-    String siteCountry();
+    public String getSiteSection();
 
-    @Property(label = "Site Locale", description = "Locale")
-    String siteLocale();
-
-    @Property(label = "Site Section", description = "Section")
-    String siteSection();
+    public String getSiteAdmin();
 }
