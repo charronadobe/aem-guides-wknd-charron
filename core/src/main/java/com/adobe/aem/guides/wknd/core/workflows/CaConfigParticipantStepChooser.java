@@ -4,6 +4,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.caconfig.ConfigurationBuilder;
 import org.osgi.service.component.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.adobe.aem.guides.wknd.core.config.CaConfigParticipantStepChooserConfig;
 import com.adobe.granite.workflow.WorkflowException;
@@ -14,6 +16,7 @@ import com.adobe.granite.workflow.metadata.MetaDataMap;
 
 @Component()
 public class CaConfigParticipantStepChooser implements ParticipantStepChooser {
+    final static Logger LOG = LoggerFactory.getLogger(CaConfigParticipantStepChooser.class);
     final static String DEFAULT_APPROVER = "admin";
 
     @Override
@@ -27,6 +30,8 @@ public class CaConfigParticipantStepChooser implements ParticipantStepChooser {
                 CaConfigParticipantStepChooserConfig config = contentResource.adaptTo(ConfigurationBuilder.class)
                         .as(CaConfigParticipantStepChooserConfig.class);
                 return config.approverGroup();
+            } else {
+                LOG.warn("Path {} does not exist", path);
             }
         }
 
