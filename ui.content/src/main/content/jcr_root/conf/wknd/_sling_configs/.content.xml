@@ -15,5 +15,8 @@
         siteAdmin="Digital Marketing"
         siteCountry="Canada"
         siteLocale="Alberta"
-        siteSection="SUVs"/>
+        siteSection="SUVs"
+    <com.adobe.aem.guides.wknd.core.config.CaConfigParticipantStepChooserConfig
+        jcr:primaryType="nt:unstructured"
+        approverGroup="Authors"/>
 </jcr:root>
