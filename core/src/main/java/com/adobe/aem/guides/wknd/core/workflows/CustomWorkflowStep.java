@@ -6,7 +6,7 @@
 
 package com.adobe.aem.guides.wknd.core.workflows;
 
-import javax.jcr.Node;
+//import javax.jcr.Node;
 import javax.jcr.Session;
 
 import com.adobe.granite.workflow.WorkflowSession;
@@ -39,7 +39,7 @@ public class CustomWorkflowStep implements WorkflowProcess {
             if (workflowData.getPayloadType().equals("JCR_PATH")) {
                 String path = workflowData.getPayload().toString() + "/jcr:content";
                 Session session = workflowSession.adaptTo(Session.class);
-                Node node = (Node) session.getItem(path);
+                // Node node = (Node) session.getItem(path);
 
                 String brand = processArguments.get("BRAND", "");
                 boolean multinational = processArguments.get("MULTINATIONAL", false);
