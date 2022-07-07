@@ -1,19 +1,19 @@
 .cmp-hero {
   .cmp-hero__container {
-    .cmp-hero__image {
-      position: relative;
-      float: left;
+    position: relative;
+    display: inline-block;
 
-      .cmp-image__image {
-        object-fit: cover;
-      }
+    .cmp-hero__image {
+      display: block;
+      object-fit: cover;
     }
 
     .cmp-hero__copy {
       position: absolute;
-      top: 30%;
-      left: 30%;
-      transform: translate(-30%, -30%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
 
       .cmp-hero__header {
         font-size: 48px;
