@@ -728,7 +728,7 @@ Bundle-DocURL:
                 <groupId>digital.hoodoo</groupId>
                 <artifactId>workfront-tools.ui.apps</artifactId>
                 <type>zip</type>
-                <version>1.8.0</version>
+                <version>1.9.1</version>
                 <scope>system</scope>
                 <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
             </dependency>
