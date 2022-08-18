@@ -46,13 +46,6 @@
                         <filter><root>/apps/settings</root></filter>
                         <filter><root>/apps/settings/wcm</root></filter>
                         <filter><root>/apps/settings/wcm/designs</root></filter>
-
-                        <!-- For ACS Commons Marketo Forms fix -->
-                        <filter><root>/apps/acs-commons</root></filter>
-                        <filter><root>/apps/acs-commons/components</root></filter>
-                        <filter><root>/apps/acs-commons/components/content</root></filter>
-                        <filter><root>/apps/acs-commons/components/content/embeddable</root></filter>
-                        <filter><root>/apps/acs-commons/components/content/embeddable/marketo</root></filter>
                     </filters>
                 </configuration>
             </plugin>

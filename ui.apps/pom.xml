@@ -58,14 +58,7 @@
                             <artifactId>aem-guides-wknd.ui.apps.structure</artifactId>
                         </repositoryStructurePackage>
                     </repositoryStructurePackages>
-                    <dependencies>
-                        <!-- For ACS Commons Marketo Forms fix -->
-                        <dependency>
-                            <groupId>com.adobe.acs</groupId>
-                            <artifactId>acs-aem-commons-ui.apps</artifactId>
-                            <version>5.3.0</version>
-                        </dependency>
-                    </dependencies>
+                    <dependencies/>
                 </configuration>
             </plugin>
             <plugin>
@@ -146,18 +139,12 @@
             <version>1.2.0-1.4.0</version>
             <scope>provided</scope>
         </dependency>
-        <!-- For ACS Commons Marketo Forms fix -->
+        <!-- For ACS Commons Java APIs -->
         <dependency>
             <groupId>com.adobe.acs</groupId>
             <artifactId>acs-aem-commons-bundle</artifactId>
             <version>5.3.0</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.acs</groupId>
-            <artifactId>acs-aem-commons-ui.apps</artifactId>
-            <version>5.3.0</version>
-            <type>zip</type>
         </dependency>
     </dependencies>
 </project>
