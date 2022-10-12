@@ -33,6 +33,13 @@
   }
 }
 
+/* Brand Accent */
+.cmp-title--accent {
+  .cmp-title__text {
+    color: $brand-accent;
+  }
+}
+
 /* Bold */
 .cmp-title--bold {
   .cmp-title__text {
