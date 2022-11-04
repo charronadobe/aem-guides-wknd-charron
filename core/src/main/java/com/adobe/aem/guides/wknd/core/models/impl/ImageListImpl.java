@@ -180,8 +180,8 @@ public class ImageListImpl implements ImageList {
 
         @Override
         public String getURL() {
-            // return wrappedListItem.getURL();
-            return wrappedListItem.getLink().toString();
+            return wrappedListItem.getURL();
+            // return wrappedListItem.getLink().toString();
         }
 
         public boolean isEmpty() {
