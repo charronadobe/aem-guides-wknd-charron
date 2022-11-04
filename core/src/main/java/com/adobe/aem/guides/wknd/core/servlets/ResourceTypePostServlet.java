@@ -59,7 +59,7 @@ public class ResourceTypePostServlet extends SlingAllMethodsServlet {
                 LOG.info("\n==PARAMETERS== {} : {}", requestParameter.getName(), requestParameter.getString());
             }
         } catch (Exception e) {
-            LOG.info("Error in request {}", e.getMessage());
+            LOG.error("Error in request {}", e.getMessage());
         }
 
         resp.getWriter().write("DATA SUBMITTED");
