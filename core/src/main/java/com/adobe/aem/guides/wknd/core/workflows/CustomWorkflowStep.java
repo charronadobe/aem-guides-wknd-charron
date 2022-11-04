@@ -37,8 +37,8 @@ public class CustomWorkflowStep implements WorkflowProcess {
             WorkflowData workflowData = workItem.getWorkflowData();
 
             if (workflowData.getPayloadType().equals("JCR_PATH")) {
-                String path = workflowData.getPayload().toString() + "/jcr:content";
-                Session session = workflowSession.adaptTo(Session.class);
+                // String path = workflowData.getPayload().toString() + "/jcr:content";
+                // Session session = workflowSession.adaptTo(Session.class);
                 // Node node = (Node) session.getItem(path);
 
                 String brand = processArguments.get("BRAND", "");
