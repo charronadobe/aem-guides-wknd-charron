@@ -51,7 +51,7 @@ public class CustomWorkflowStep implements WorkflowProcess {
                 }
             }
         } catch (Exception e) {
-            log.info("\nError {}", e.getMessage());
+            log.error("\nError {}", e.getMessage());
         }
     }
 }

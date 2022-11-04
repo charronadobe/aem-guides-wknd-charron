@@ -47,7 +47,7 @@ public class ExecuteWorkflow extends SlingSafeMethodsServlet {
                 status = workflowSession.startWorkflow(workflowModel, workflowData).getState();
             }
         } catch (Exception e) {
-            LOG.info("\nError in Workflow {} ", e.getMessage());
+            LOG.error("\nError in Workflow {} ", e.getMessage());
         }
         resp.setContentType("application/json");
         resp.getWriter().write(status);
